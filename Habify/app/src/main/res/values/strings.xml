@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Habify</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_manage">Manage</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_shareable_profile">Shareable Profile</string>
+    <string name="title_preferences">Preferences</string>
+    <string name="title_save">Save</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="enter_your_user_name">Enter your user name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="title_habitsetup">New Habit Setup</string>
+    <string name="daily_progress">Daily Progress</string>
+    <string name="no_habits_for_today">You have no habits for today! \nConsider adding a new habit in the Manage screen.</string>
+    <string name="enable_gps_verification">Enable GPS Verification?\nThis feature requires:\n\tA valid address\n\tPermission to access your location.</string>
+    <string name="continuous_habit">Is this a continuous habit?\nContinuous habits will occur until manually archived.</string>
+    <string name="enter_a_habit_name">Enter a Habit Name</string>
+    <string name="enter_a_name_for_the_location_of_this_habit">Enter Habit Location Name</string>
+    <string name="enter_a_valid_address_if_using_gps">Enter a Valid Address (if using GPS)</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="select_the_days_when_this_habit_occurs">Select the days:</string>
+    <string name="number_of_occurrences_if_not_continuous">Number of Occurrences (if not continuous)</string>
+    <string name="create_habit">Create Habit</string>
+    <string name="nothing_found">Nothing found for </string>
+    <string name="no_badges_earned_yet">No badges earned yet - be productive to earn some badges!</string>
+    <string name="no_habits_yet">Create your first habit by pressing the add button in the bottom right! All of your habits, both active and archived, will appear on this page.</string>
+    <string name="complete_habits_to_build_your_longest_streak_of_perfect_days">Complete habits to build your longest streak of perfect days!</string>
+    <string-array name="time_array">
+        <item>06:00 AM</item>
+        <item>06:30 AM</item>
+        <item>07:00 AM</item>
+        <item>07:30 AM</item>
+        <item>08:00 AM</item>
+        <item>08:30 AM</item>
+        <item>09:00 AM</item>
+        <item>09:30 AM</item>
+        <item>10:00 AM</item>
+        <item>10:30 AM</item>
+        <item>11:00 AM</item>
+        <item>11:30 AM</item>
+        <item>12:00 PM</item>
+        <item>12:30 PM</item>
+        <item>01:00 PM</item>
+        <item>01:30 PM</item>
+        <item>02:00 PM</item>
+        <item>02:30 PM</item>
+        <item>03:00 PM</item>
+        <item>03:30 PM</item>
+        <item>04:00 PM</item>
+        <item>04:30 PM</item>
+        <item>05:00 PM</item>
+        <item>05:30 PM</item>
+        <item>06:00 PM</item>
+        <item>06:30 PM</item>
+        <item>07:00 PM</item>
+        <item>07:30 PM</item>
+        <item>08:00 PM</item>
+        <item>08:30 PM</item>
+        <item>09:00 PM</item>
+        <item>09:30 PM</item>
+        <item>10:00 PM</item>
+        <item>10:30 PM</item>
+        <item>11:00 PM</item>
+        <item>11:30 PM</item>
+        <item>12:00 AM</item>
+        <item>12:30 AM</item>
+        <item>01:00 AM</item>
+        <item>01:30 AM</item>
+        <item>02:00 AM</item>
+        <item>02:30 AM</item>
+        <item>03:00 AM</item>
+        <item>03:30 AM</item>
+        <item>04:00 AM</item>
+        <item>04:30 AM</item>
+        <item>05:00 AM</item>
+        <item>05:30 AM</item>
+    </string-array>
+</resources>

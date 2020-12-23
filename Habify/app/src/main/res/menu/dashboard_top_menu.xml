@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.neu.habify.ui.dashboard.DashboardFragment">
+
+    <item
+        android:id="@+id/action_statistics"
+        android:title="@string/title_statistics"
+        android:icon="@drawable/ic_chart_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_calendar"
+        android:title="@string/title_calendar"
+        android:icon="@drawable/ic_calendar_event_white_24dp"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,26 @@
+### 0. Prepopulated tables
+- days  : the 7 days of the week as full strings, ex. "Monday"
+- badges: list of all possible badges that can be earned
+
+### 1. Create User
+- Gather data for columns in user table
+- Insert an Event entry with today's date
+- Insert a User entry using the data and Event foreign key
+
+### 2. Create Habit
+- Gather data for columns in habit table
+- Use the user_id from the current user, realistically it'll probably just be 0 for a single user
+- Determine Event: query to see if an event already exists for today, if not create one
+- Determine Location: query to see if the given location already exists, if not create one (can be null -> no gps verification)
+- Insert Habit entry using FKs: user_id, event_id as created, location_id as location
+- Generate entries in the Schedule table: for example, if the habit is daily, then there should be 7 entries (habit_id x days)
+
+### 3. Create Records
+- When a user successfully completes a habit, or fails to do so
+- Determine Event: query to see if an event already exists for today, if not create one
+- Insert a Record entry using the event_id foreign key, record the time, and evaluation (true = succeeded, false = failed)
+
+### 4. Create Awards (Need some kind of integration to run accomplishment checks)
+- When some achievement occurs, a badge will be associated with a habit and an event
+- Determine Event: query to see if an event already exists for today, if not create one
+- Insert an Award entry using habit_id, badge_id, event_id as earned_on, set display = false (user will have control later in profile)

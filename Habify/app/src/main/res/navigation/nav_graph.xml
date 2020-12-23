@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.neu.habify.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/nav_profile_to_shareable"
+            app:destination="@id/navigation_shareable"
+            app:popUpTo="@+id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.neu.habify.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/nav_dashboard_to_calendar"
+            app:destination="@id/navigation_calendar"
+            app:popUpTo="@+id/navigation_dashboard" />
+        <action
+            android:id="@+id/nav_dashboard_to_stats"
+            app:destination="@id/navigation_stats"
+            app:popUpTo="@+id/navigation_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_manage"
+        android:name="com.neu.habify.ui.manage.ManageFragment"
+        android:label="@string/title_manage"
+        tools:layout="@layout/fragment_manage" >
+        <action
+            android:id="@+id/nav_manage_to_preferences"
+            app:destination="@+id/navigation_preferences"
+            app:launchSingleTop="false"
+            app:popUpTo="@+id/navigation_manage"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/nav_manage_to_habitsetup"
+            app:destination="@+id/navigation_habitsetup"
+            app:popUpTo="@+id/navigation_manage" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_preferences"
+        android:name="com.neu.habify.ui.preferences.PreferencesFragment"
+        android:label="@string/title_preferences"
+        tools:layout="@layout/fragment_preferences" />
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.neu.habify.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.neu.habify.ui.stats.StatsFragment"
+        android:label="@string/title_statistics"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/navigation_shareable"
+        android:name="com.neu.habify.ui.shareable.ShareableFragment"
+        android:label="@string/title_shareable_profile"
+        tools:layout="@layout/fragment_shareable" />
+    <fragment
+        android:id="@+id/navigation_habitsetup"
+        android:name="com.neu.habify.ui.habitsetup.HabitSetupFragment"
+        android:label="@string/title_habitsetup"
+        tools:layout="@layout/habit_setup_fragment" />
+</navigation>
